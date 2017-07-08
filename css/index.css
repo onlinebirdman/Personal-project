@@ -1,7 +1,7 @@
-#content { background-color: #F5F5F5; max-width: 1287px; margin:0 auto;}
+#content { background-color: #F5F5F5;margin:0 auto; width: 1287px;}
 #attachedSearchContainer {width: 100%; height: 50px; background-color: red; position: fixed; top: 0; z-index: 999; display: none}
 /*顶部导航*/
-.top-nav { padding: 0 35px; height: 32px; line-height: 32px; background-color: #f7f7f7; }
+.top-nav { padding: 0 35px; height: 32px; line-height: 32px; background-color: #f7f7f7; width: 100%; box-sizing: border-box;}
 .top-nav span a { display: block; margin: 0 5px;}
 .top-nav-list { display: inline-block; float: right;}
 .top-nav-list b {  margin:0 0 3px 2px;  display: inline-block; width:0; height:0;border-width:3px 3px 0px;border-style:solid;border-color:#333 transparent transparent;}
