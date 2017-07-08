@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<title>Tmall</title>
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset..css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="content">
+		<div class="top-nav">
+			<span>喵，欢迎来天猫</span><a href="#">&nbsp;[&nbsp;请登录&nbsp;]&nbsp;</a><a href="#">[&nbsp;免费注册&nbsp;]</a>
+			<ul class="top-nav-list">
+				<li><a href="#">我的淘宝<b></b></a>
+					<div class="top-nav-down">
+						<a href="#">已买到的宝贝</a>
+						<a href="#">已卖出的宝贝</a>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-heart">&nbsp;</i>我关注的品牌</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart"></i>&nbsp;购物车<span>0</span>件</a></li>
+				<li><a href="#">收藏夹<b></b></a>
+					<div class="top-nav-down">
+						<a href="#">收藏的宝贝</a>
+						<a href="#">收藏的店铺</a>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-mobile" style="font-size: 14px">&nbsp;</i>手机版</a>
+					<div class="top-nav-down" style="background: url('images/tmallApp.png') 0 0 no-repeat;; width: 175px; height: 176px; ">
+					</div>
+				</li>
+				<li><a href="#">淘宝网</a></li>
+				<li><a href="#">企业购</a></li>
+				<li><a href="#">商家支持</a></li>
+				<li><a href="#"><i class="fa fa-list">&nbsp;</i>网站导航</a></li>
+			</ul>
+		</div>
+		<div class="search-nav">
+			<div class="search-nav-left-box float_left"><img class="search-nav-logo" src="https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png" alt=""></div>
+			<div class="search-box float_left">
+				<form class="search-form" action="">
+					<input id="search_input" class="search-input float_left" value="" type="text"><button type="submit" id="search-button" class="search-button float_left">搜索</button>
+					<ul class="search-suggestion" id="search-suggestion"></ul>
+				</form>
+				<ul class="search-nav-list" id="search-nav-list">
+					<li>t恤男</li>
+					<li>连衣裙</li>
+					<li>夏凉被</li>
+					<li>电动牙刷</li>
+					<li>麻将灯</li>
+					<li>防晒衣</li>
+					<li>凉鞋</li>
+					<li>双肩包</li>
+					<li>口红</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-nav">
+			<ul class="main-nav-list">
+				<li><a href="#"><img src="https://img.alicdn.com/tps/i2/TB1xgT8LVXXXXaZXFXX8ueZHFXX-180-72.png" alt=""></a></li>
+				<li><a href="#"><img src="https://img.alicdn.com/tps/i3/TB1.560LVXXXXb7XVXX8ueZHFXX-180-72.png" alt=""></a></li>
+				<li><a href="#">天猫会员</a><div class="hover-pic"></div></li>
+				<li><a href="#">品牌街</a><div class="hover-pic"></div></li>
+				<li><a href="#">电器城</a><div class="hover-pic"></div></li>
+				<li><a href="#">喵鲜生</a><div class="hover-pic"></div></li>
+				<li><a href="#">医药馆</a><div class="hover-pic"></div></li>
+				<li><a href="#">营业厅</a><div class="hover-pic"></div></li>
+				<li><a href="#">魅力惠</a><div class="hover-pic"></div></li>
+				<li><a href="#">飞猪旅行</a><div class="hover-pic"></div></li>
+				<li><a href="#">苏宁易购</a><div class="hover-pic"></div></li>
+			</ul>
+		</div>
+		<div class="relative-mask">
+			<div id="main-menu">
+				<div class="menu-title-box"><i class="fa fa-bars"></i><span class="menu-title-text">商品分类</span></div>
+				<ul class="menu-level-0">
+					<li>
+						<a href="#">图书、音像、数字商品</a>
+						<div class="menu-level-1">
+							<div class="menu-level-1-left">
+								<dl>
+			                        <dt><a href="#">电子书</a></dt>
+			                        <dd>
+			                            <a href="#">免费</a> <a href="#">小说</a> <a href="#">励志与成功</a> <a href="#">婚恋/两性</a>
+			                            <a href="#">文学</a> <a href="#">经管</a> <a href="#">畅读VIP</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">数字音乐</a></dt>
+			                        <dd>
+			                            <a href="#">通俗流行</a> <a href="#">古典音乐</a> <a href="#">摇滚说唱</a> <a href="#">爵士蓝调</a>
+			                            <a href="#">乡村民谣</a> <a href="#">有声读物</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">音像</a></dt>
+			                        <dd>
+			                            <a href="#">音乐</a> <a href="#">影视</a> <a href="#">教育音像</a> <a href="#">游戏</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">文艺</a></dt>
+			                        <dd>
+			                            <a href="#">小说</a> <a href="#">文学</a> <a href="#">青春文学</a> <a href="#">传记</a> <a
+			                                href="#">艺术</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">人文社科</a></dt>
+			                        <dd>
+			                            <a href="#">历史</a> <a href="#">心理学</a> <a href="#">政治/军事</a> <a href="#">国学/古籍</a>
+			                            <a href="#">哲学/宗教</a> <a href="#">社会科学</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">经管励志</a></dt>
+			                        <dd>
+			                            <a href="#">经济</a> <a href="#">金融与投资</a> <a href="#">管理</a> <a href="#">励志与成功</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">生活</a></dt>
+			                        <dd>
+			                            <a href="#">家教与育儿</a> <a href="#">旅游/地图</a> <a href="#">烹饪/美食</a> <a href="#">时尚/美妆</a>
+			                            <a href="#">家居</a> <a href="#">婚恋与两性</a> <a href="#">娱乐/休闲</a> <a href="#">健身与保健</a>
+			                            <a href="#">动漫/幽默</a> <a href="#">体育/运动</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">科技</a></dt>
+			                        <dd>
+			                            <a href="#">科普</a> <a href="#">IT</a> <a href="#">建筑</a> <a href="#">医学</a> <a href="#">
+			                                工业技术</a> <a href="#">电子/通信</a> <a href="#">农林</a> <a href="#">科学与自然</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">少儿</a></dt>
+			                        <dd>
+			                            <a href="#">少儿</a> <a href="#">0-2岁</a> <a href="#">3-6岁</a> <a href="#">7-10岁</a>
+			                            <a href="#">11-14岁</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">教育</a></dt>
+			                        <dd>
+			                            <a href="#">教材</a> <a href="#">中小学教辅</a> <a href="#">考试</a> <a href="#">外语学习</a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt><a href="#">其它</a></dt>
+			                        <dd>
+			                            <a href="#">英文原版书</a> <a href="#">港台图书</a> <a href="#">工具书</a> <a href="#">套装书</a>
+			                            <a href="#">杂志/期刊</a>
+			                        </dd>
+			                    </dl>
+							</div>
+							<div class="menu-level-1-right float_right">
+								<dl>
+			                        <dd>
+			                            <a href="http://sale.jd.com/act/1XDZ6ShE5M7tTrl.html">
+			                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/1B/rBEbRlOCFcoIAAAAAAArMNB2tlkAACTlwDgVG8AACtI514.jpg"
+			                                    width="194" height="70" title="\家电">
+			                            </a>
+			                        </dd>
+			                        <dd>
+			                            <a href="http://sale.jd.com/act/v8kJIaPmsMGuebpH.html">
+			                                <img src="http://img30.360buyimg.com/erpVCAare/g16/M00/0B/19/rBEbRlOAiHUIAAAAAAAx8X2c6oIAACTCAP56A4AADIJ112.jpg"
+			                                    width="194" height="70" title="小家电--三请聚宝盆">
+			                            </a>
+			                        </dd>
+			                    </dl>
+			                    <dl>
+			                        <dt>推荐品牌</dt>
+			                        <dd>
+			                            <a href="#">美的官方旗舰店</a>
+			                        </dd>
+			                        <dd>
+			                            <a href="#">苏泊尔旗舰店</a>
+			                        </dd>
+			                        <dd>
+			                            <a href="#">九阳旗舰店</a>
+			                        </dd>
+			                        <dd>
+			                            <a href="#">东菱旗舰店</a>
+			                        </dd>
+			                        <dd>
+			                            <a href="#">海尔统帅旗舰店</a>
+			                        </dd>
+			                        <dd>
+			                            <a href="#">小熊旗舰店</a>
+			                        </dd>
+			                    </dl> 
+			        			<img src = 'http://img.mukewang.com/541120c80001aae401970164.jpg' width="200" class="test-img">
+							</div>
+						</div>
+					</li>
+					<li><a href="#">家用电器</a></li>
+			        <li><a href="#">手机、数码</a></li>
+			        <li><a href="#">电脑、办公</a></li>
+			        <li><a href="#">家居、家具、家装、厨具</a></li>
+			        <li><a href="#">服饰内衣、珠宝首饰</a></li>
+			        <li><a href="#">个护化妆</a></li>
+			        <li><a href="#">鞋靴、箱包、钟表、奢侈品</a></li>
+			        <li><a href="#">运动户外</a></li>
+			        <li><a href="#">汽车用品</a></li>
+			        <li><a href="#">母婴、玩具乐器</a></li>
+			        <li><a href="#">食品饮料、酒类、生鲜</a></li>
+			        <li><a href="#">营养保健</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="slider-box">
+			<div class="slider-content">
+				<div class="slider-img myfadein" style="display: block;">
+					<a href="#"><img src="./images/lunbo/1.jpg" alt=""></a>
+				</div>
+				<div class="slider-img myfadein" style="display: none;">
+					<a href="#"><img src="./images/lunbo/2.jpg" alt=""></a>
+				</div>
+				<div class="slider-img myfadein" style="display: none;">
+					<a href="#"><img src="./images/lunbo/3.jpg" alt=""></a>
+				</div>
+				<div class="slider-img myfadein" style="display: none;">
+					<a href="#"><img src="./images/lunbo/4.jpg" alt=""></a>
+				</div>
+				<div class="slider-img myfadein" style="display: none;">
+					<a href="#"><img src="./images/lunbo/5.jpg" alt=""></a>
+				</div>
+				<div class="slider-img myfadein" style="display: none;">
+					<a href="#"><img src="./images/lunbo/6.jpg" alt=""></a>
+				</div>
+			</div>
+			<div class="slider-nav">
+				<li class="selected"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</div>
+		</div>
+		<div class="discount-area">
+			<div class="discount-title-box">
+				<span class="vline-left"></span>
+				<div class="discount-title-body">
+					<i class="fa fa-map-marker" style="font-size: 18px">&nbsp;</i>你的专属活动
+				</div>
+				<span class="vline-right"></span>
+			</div>
+			<div class="discount-body">
+				<a href="#" class="discount-item"><img src="https://img.alicdn.com/imgextra/i2/2108418347/TB2h0gDuStkpuFjy0FhXXXQzFXa_!!2108418347.jpg_240x5000q100.jpg" alt=""></a>
+				<a href="#" class="discount-item"><img src="https://img.alicdn.com/imgextra/i4/2215696389/TB2zcNruC0jpuFjy0FlXXc0bpXa_!!2215696389.jpg_240x5000q100.jpg" alt=""></a>
+				<a href="#" class="discount-item"><img src="https://img.alicdn.com/imgextra/i1/817769856/TB2BPaNu9XlpuFjy0FeXXcJbFXa_!!817769856.jpg_240x5000q100.jpg" alt=""></a>
+				<a href="#" class="discount-item"><img src="https://img.alicdn.com/imgextra/i3/2215696389/TB2EHR8uB8lpuFjy0FnXXcZyXXa_!!2215696389.jpg_240x5000q100.jpg" alt=""></a>
+				<a href="#" class="discount-item"><img src="https://img.alicdn.com/imgextra/i1/1910146537/TB2UXLovmBjpuFjSsplXXa5MVXa_!!1910146537.jpg_240x5000q100.jpg" alt=""></a>
+			</div>
+			<div class="new-hot-brand">
+				<div class="vedio-area">
+					<div class="vedio-body">
+						<img src="https://img.alicdn.com/imgextra/i2/3012310634/TB2h.mNvwxlpuFjSszbXXcSVpXa_!!0-tmallfun.jpg_1080x1800Q80S0.jpg" alt="" class="big-vedio-cover">
+						<a class="play-icon-md" href="#"><img src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt="" style="width: 100%; height: auto"></a>
+						<span class="live-con"><i class="fa fa-dot-circle-o">&nbsp;</i>直播中</span>
+						<p class="vedio-title">宫家定制！珠宝界奇葩-”代孕哥“手绘</p>
+					</div>
+					<div class="vedio-list">
+						<div style="width: 984px; height: 90px" class="relative-mask">
+							<div class="vedio-list-nav vedio-list-left float_left"><i class="fa fa-angle-left"></i></div>
+							<div class="vedio-list-nav vedio-list-right float_right"><i class="fa fa-angle-right"></i></div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i2/3012310634/TB2h.mNvwxlpuFjSszbXXcSVpXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 宫家定制！珠宝界奇葩-”代孕哥“手绘</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i2/1664837269/TB2wHt3zOpnpuFjSZFIXXXh2VXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 淘抢购来袭 第二双半价不间断</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i2/3026143309/TB25O3kzYlmpuFjSZFlXXbdQXXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 美丽变身记 穿搭最重要</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i2/1939756580/TB2UXbSvwRkpuFjy1zeXXc.6FXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 渔歌子先生卖童装放福利</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i1/1886255877/TB285ToiSB0XKJjSZFsXXaxfpXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 月月教你化约会妆</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+							<div class="vedio-item">
+								<img src="https://img.alicdn.com/imgextra/i1/2988617847/TB21UMAz90mpuFjSZPiXXbssVXa_!!0-tmallfun.jpg_320x5000Q80S0.jpg" alt="" class="small-vedio-cover">
+								<p class="vedio-item-title"># 湖北矿区原矿绿松石</p>
+								<a class="play-icon-sm" href="#"><img style="width: 100%; height: auto" src="https://gw.alicdn.com/tps/TB1v5fhLpXXXXX2XFXXXXXXXXXX-144-118.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="vedio-forecast">
+						<div class="live-logo">
+							<img src="images/live_logo.png" alt="">
+						</div>
+						<div class="float_left show-msg" style="width:300px">
+							<p class="live-msg">明天下午2:30，欢迎来到鸟人直播间！</p>
+							<p class="live-msg">今晚鸟人直播间不见不散！</p>
+						</div>
+					</div>
+				</div>
+				<div class="brandsArea float_left flex-auto-wrap">
+						<div class="brands-item">
+							<img src="http://img.alicdn.com/i2/2/TB1Svn6RVXXXXc8aXXXXXXXXXXX?abtest=_AB-LR1315-PR1315&pos=1&abbucket=_AB-M1315_B13&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券&nbsp;￥80</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1FlDbIpXXXXa4XpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 3917</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB12VjZLpXXXXcOXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥200</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1sb93IXXXXXXJXpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1EvPRHpXXXXbcXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1YufRHpXXXXbvXpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥30</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1A2k6PVXXXXb4XFXXXXXXXXXX-1000-500.png_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 20.0万</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1s1gSIpXXXXXnXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 1.5万</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1ZiIJIVXXXXcHXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 9.1万</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1oGgrIpXXXXbAXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥70</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1ueQlJpXXXXcFXpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥500</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1lpcgHpXXXXcNXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥300</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1tgkaJpXXXXbiXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1ZKTzIpXXXXcyXXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥20</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/T1gbFVXXXFXXb1upjX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1T0E_IXXXXXbBaXXXwu0bFXXX.png_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 168.0万</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1y2XnLFXXXXbxXVXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">关注人数 11.2万</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1oM3QIVXXXXccXpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1oE2AKFXXXXbCXpXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥5</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1qwHPHpXXXXbpXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥20</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1ZOrRRXXXXXaLapXXXXXXXXXX?abtest=_AB-LR1315-PR1315&pos=21&abbucket=_AB-M1315_B13&acm=09042.1003.1.1200415&scm=1007.13029.56634.100200300000000_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥20</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB1FIXKJFXXXXbiXFXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥50</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<div class="brands-item">
+							<img src="https://img.alicdn.com/i2/2/TB17PY_JVXXXXbcaXXXSutbFXXX.jpg_100x150q100.jpg" alt="">
+							<div class="brands-hover">
+								<a href="#" class="iLike"><i class="fa fa-heart-o"></i></a>
+								<span class="brand-msg">优惠券 ￥100</span>
+								<a href="#" class="enterBrand">点击进入</a>
+							</div>
+						</div>
+						<a href="#" class="brands-item refresh-brands" style="">
+							<span class="refresh-icon" href="#"><i class="fa fa-refresh"></i></span>
+							<span class="refresh-brands-text">换一批</span>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div class="channel-content">
+			<div class="channel-column">
+				<div class="channel-title">
+					<i class="fa fa-leaf"> </i><span>潮流前线</span>
+				</div>
+				<div class="channel-body">
+					<a href="#" class="channel-item">
+						<div class="item-title">焕新</div>
+						<div class="item-sub-title">品牌精选精品</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://img.alicdn.com/bao/uploaded/i3/92688455/TB2QpofsYxmpuFjSZJiXXXauVXa_!!92688455.png" alt="">
+						</div>
+					</a>
+					<a href="#" class="channel-item">
+						<div class="item-title">全球时尚</div>
+						<div class="item-sub-title">大牌精致时尚</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://gw.alicdn.com/imgextra/i3/181/TB2dQOMcmOI.eBjy1zkXXadxFXa_!!181-0-yamato.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="channel-column">
+				<div class="channel-title">
+					<i class="fa fa-mobile-phone"> </i><span>手机酷玩</span>
+				</div>
+				<div class="channel-body">
+					<a href="#" class="channel-item">
+						<div class="item-title">手机馆</div>
+						<div class="item-sub-title">精品手机限时立减</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://gw.alicdn.com/tfs/TB15bvLRFXXXXbMaFXXXXXXXXXX-140-140.png" alt="">
+						</div>
+					</a>
+					<a href="#" class="channel-item">
+						<div class="item-title">酷玩街</div>
+						<div class="item-sub-title">潮炫创意智能</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://gw.alicdn.com/imgextra/i4/178/TB2VcJbbV5N.eBjSZFKXXX_QVXa_!!178-0-yamato.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="channel-column">
+				<div class="channel-title">
+					<i class="fa fa-shopping-cart"> </i><span>品质生活</span>
+				</div>
+				<div class="channel-body">
+					<a href="#" class="channel-item">
+						<div class="item-title">必抢</div>
+						<div class="item-sub-title">巨超值 卖疯啦</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="http://img.alicdn.com/bao/upload/TB1nld4OFXXXXcQXpXXE799_VXX-800-800.jpg" alt="">
+						</div>
+					</a>
+					<a href="#" class="channel-item">
+						<div class="item-title">喵鲜生</div>
+						<div class="item-sub-title">全球好品甄选</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://gw.alicdn.com/imgextra/i3/73/TB2e_NtcwOI.eBjSszhXXbHvFXa_!!73-0-yamato.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="channel-column">
+				<div class="channel-title">
+					<i class="fa fa-plane"> </i><span>国际海购</span>
+				</div>
+				<div class="channel-body">
+					<a href="#" class="channel-item">
+						<div class="item-title">全球精选</div>
+						<div class="item-sub-title">来自澳洲的健康专家</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://img.alicdn.com/tps/TB1sXCLLVXXXXa0XXXXXXXXXXXX-140-140.jpg" alt="">
+						</div>
+					</a>
+					<a href="#" class="channel-item">
+						<div class="item-title">天猫国际直营</div>
+						<div class="item-sub-title">官方进口直采</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://img.alicdn.com/tps/i4/TB1CgaQQVXXXXbGXFXXSutbFXXX.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="channel-column">
+				<div class="channel-title">
+					<i class="fa fa-heart-o"> </i><span>个性推荐</span>
+				</div>
+				<div class="channel-body">
+					<a href="#" class="channel-item">
+						<div class="item-title">囤货</div>
+						<div class="item-sub-title">居家必备</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://img.alicdn.com/bao/upload/TB1bjo8MVXXXXcoXVXXE799_VXX-800-800.jpg" alt="">
+						</div>
+					</a>
+					<a href="#" class="channel-item">
+						<div class="item-title">精明主妇</div>
+						<div class="item-sub-title">生活更easy</div>
+						<div class="item-img">
+							<div class="img-mask"></div>
+							<img src="https://img.alicdn.com/bao/upload/TB1.iAbNXXXXXa2apXXE799_VXX-800-800.jpg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="floor-content">
+			<div class="floor-box">
+				<div class="floor-header">
+					<div class="floor-title-box">
+						<i class="color-mark color-mark-pink"></i>
+						<div class="floor-name">美丽人生</div>
+						<div class="floor-sub-name">FASHION &amp; BEAUTY</div>
+					</div>
+					<div class="floor-hot-word">
+						<ul>
+							<li><a href="#">连衣裙</a></li>
+							<li><a href="#">T恤男</a></li>
+							<li><a href="#">美容护肤</a></li>
+							<li><a href="#">休闲男鞋</a></li>
+							<li><a href="#">黄金项链</a></li>
+							<li><a href="#">单鞋</a></li>
+							<li><a href="#">女包</a></li>
+							<li><a href="#">文胸</a></li>
+							<li><a href="#">大牌腕表</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="floor-body flex-auto-wrap">
+					<div class="floor-left-column">
+						<a href="#" class="floor-left-content">
+							<img src="https://img.alicdn.com/tps/i4/TB1twsORVXXXXa4aXXXSutbFXXX.jpg" alt="" class="floor-lc-banner">
+							<div class="floor-lc-title-con color-mark-pink">
+								<div class="floor-lc-title">天猫服饰品牌开仓</div>
+								<div class="floor-lc-sub-title">抢大额优惠券</div>
+								<div class="floor-lc-decoration"></div>
+							</div>
+							<div class="floor-lc-slider-show">
+								<div class="floor-lc-slider-items">
+									<div class="floor-lc-slider-item">好货限时好价</div>
+									<div class="floor-lc-slider-item">夏服囤货季</div>
+									<div class="floor-lc-slider-item">夏服囤货季</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="floor-middle-column flex-auto-wrap">
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">显瘦百搭短袖T恤</div>
+							<div class="grid-sub-title grid-sub-title-pink">潮牌大码显瘦百搭男装潮牌大码显瘦百搭男装</div>
+							<img src="https://img.alicdn.com/i2/2/TB1_ZJjSXXXXXX2XpXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">寻找你的性感本色</div>
+							<div class="grid-sub-title grid-sub-title-pink">衣橱新宠百变look</div>
+							<img src="https://img.alicdn.com/i2/2/TB1Tb7kRVXXXXcsXpXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">防晒薄款雪纺衫</div>
+							<div class="grid-sub-title grid-sub-title-pink">舒适透气防晒雪纺衫</div>
+							<img src="https://img.alicdn.com/i2/2/TB1T0x0SXXXXXbxXpXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">轻薄夹克</div>
+							<div class="grid-sub-title grid-sub-title-pink">春秋迷彩夹克</div>
+							<img src="https://img.alicdn.com/i2/2/TB18nplSXXXXXaGaXXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">好货推荐</div>
+							<div class="grid-sub-title grid-sub-title-pink">优质面料</div>
+							<img src="https://img.alicdn.com/i2/2/TB1tR6IRVXXXXaNaXXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">夏装新品</div>
+							<div class="grid-sub-title grid-sub-title-pink">每周焕新</div>
+							<img src="https://img.alicdn.com/i2/2/TB1ghp8RVXXXXbjXXXXSutbFXXX.jpg" alt="">
+						</a>
+					</div>
+					<div class="floor-right-column flex-auto-wrap">
+						<a href="#" class="floor-grid one-third-grid-y">
+							<div class="grid-title">靓丽印花</div>
+							<div class="grid-sub-title grid-sub-title-pink">美艳动人</div>
+							<img src="https://img.alicdn.com/i2/2/TB1kowHRFXXXXayaXXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-third-grid-y">
+							<div class="grid-title">印花风情</div>
+							<div class="grid-sub-title grid-sub-title-pink">惹火夏日</div>
+							<img src="https://img.alicdn.com/i2/2/TB182tRRVXXXXcxXVXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-third-grid-y">
+							<div class="grid-title">茵曼热卖印花衬衫</div>
+							<div class="grid-sub-title grid-sub-title-pink">新品69元起</div>
+							<img src="https://img.alicdn.com/i2/2/TB19C0PRVXXXXaPXFXXSutbFXXX.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="floor-box">
+				<div class="floor-header">
+					<div class="floor-title-box">
+						<i class="color-mark color-mark-blue"></i>
+						<div class="floor-name">潮电酷玩</div>
+						<div class="floor-sub-name">ELECTRONICS</div>
+					</div>
+					<div class="floor-hot-word">
+						<ul>
+							<li><a href="#">手机</a></li>
+							<li><a href="#">iPhone</a></li>
+							<li><a href="#">相机</a></li>
+							<li><a href="#">数码配件</a></li>
+							<li><a href="#">影音电玩</a></li>
+							<li><a href="#">生活电器</a></li>
+							<li><a href="#">个人护理</a></li>
+							<li><a href="#">电脑硬件</a></li>
+							<li><a href="#">笔记本</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="floor-body flex-auto-wrap">
+					<div class="floor-left-column">
+						<a href="#" class="floor-left-content">
+							<img src="https://img.alicdn.com/tfs/TB1Szk.RVXXXXb3XFXXXXXXXXXX-492-660.jpg" alt="" class="floor-lc-banner">
+							<div class="floor-lc-title-con color-mark-blue">
+								<div class="floor-lc-title">品智生活季</div>
+								<div class="floor-lc-sub-title">抢大牌爆款直降</div>
+								<div class="floor-lc-decoration"></div>
+							</div>
+							<div class="floor-lc-slider-show">
+								<div class="floor-lc-slider-items">
+									<div class="floor-lc-slider-item">分期免息</div>
+									<div class="floor-lc-slider-item">1匹空调￥1599起</div>
+									<div class="floor-lc-slider-item">多门冰箱￥1599元起</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="floor-middle-column flex-auto-wrap">
+						<a href="#" class="floor-grid two-grid">
+							<div class="grid-title">vivo X9sPlus</div>
+							<div class="grid-sub-title grid-sub-title-blue">新品上市互动赢手机</div>
+							<img src="https://img.alicdn.com/tfs/TB12IVQSXXXXXX6XVXXXXXXXXXX-400-400.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">希捷存储盛宴</div>
+							<div class="grid-sub-title grid-sub-title-blue">数字世界尽在存储</div>
+							<img src="https://img.alicdn.com/i2/2/TB1EH8ESXXXXXbCaXXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">感觉自己萌萌Da</div>
+							<div class="grid-sub-title grid-sub-title-blue">电子秤暑期大作战</div>
+							<img src="https://img.alicdn.com/i2/2/TB1GFPnRVXXXXcEXpXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">梅雨除湿季</div>
+							<div class="grid-sub-title grid-sub-title-blue">大额优惠券限抢</div>
+							<img src="https://gw.alicdn.com/imgextra/i2/23/TB2hTapl9FmpuFjSZFrXXayOXXa_!!23-0-yamato.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">蓝牙音响</div>
+							<div class="grid-sub-title grid-sub-title-blue">无线便携 乐享生活</div>
+							<img src="https://img.alicdn.com/tfs/TB1U2.ORVXXXXa2XpXXXXXXXXXX-400-400.jpg" alt="">
+						</a>
+					</div>
+					<div class="floor-right-column flex-auto-wrap">
+						
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">三星电竞曲面</div>
+							<div class="grid-sub-title grid-sub-title-blue">刷新率144HZ</div>
+							<img src="https://img.alicdn.com/i2/2/TB1n4sYRVXXXXaoXpXXSutbFXXX.jpg" alt="">
+						</a>
+						<a href="#" class="floor-grid one-grid">
+							<div class="grid-title">魅蓝E2</div>
+							<div class="grid-sub-title grid-sub-title-blue">分期免息送大礼</div>
+							<img src="https://img.alicdn.com/i2/2/TB1XTjqRVXXXXatXXXXSutbFXXX.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wonderful-content">
+			<div class="wonderful-header">
+				<span>———</span>
+				<span><i class="fa fa-heart-o"></i> 猜你喜欢</span>
+				<span>———</span>
+			</div>
+			<div class="wonderful-body flex-auto-wrap">
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1sRZXOpXXXXcdXXXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>花仙子重复使用型除湿桶660ml除吸湿盒除湿剂干燥剂衣服柜防潮3盒</p>
+					<span class="item-price">￥ 39.9</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB12cw6NFXXXXa.XpXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>澳乐儿童婴儿游戏围栏宝宝爬行垫学步护栏安全栅栏 家用室内玩具</p>
+					<span class="item-price">￥ 418.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB11BtRPFXXXXc2aXXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>奥迪双钻超级飞侠玩具乐迪酷飞 新款米莉 大号益智变形飞机机器人</p>
+					<span class="item-price">￥ 79.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB107s.RXXXXXbTXpXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>RECIPE正品韩国水晶防晒喷雾spf50 防水全身防晒霜面部娜扎同款女</p>
+					<span class="item-price">￥ 69.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/i4/1635636237/TB2pCRwapXXXXbIXpXXXXXXXXXX_!!1635636237.png_400x400q60.jpg" alt="">
+					<p>【经典】Onitsuka Tiger鬼塚虎 男女运动小白鞋 MEXICO 66 TH1B2N</p>
+					<span class="item-price">￥ 550.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/i3/TB1ePrORXXXXXcPXpXXXXXXXXXX_!!0-item_pic.jpg_400x400q60.jpg" alt="">
+					<p>【天猫超市】台湾进口零食77松塔千层酥饼干曲奇蜜兰诺12粒</p>
+					<span class="item-price">￥ 35.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/i3/2455221099/TB2VrhZvItnpuFjSZFKXXalFFXa_!!2455221099.png_400x400q60.jpg" alt="">
+					<p>好利来玫瑰蛋黄酥8枚糕点点心零食小吃美食</p>
+					<span class="item-price">￥ 40.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1yx9iNVXXXXaQXpXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>美乐 儿童拼图纸质大拼板动物益智玩具0-3岁卡通创意宝宝幼儿拼图</p>
+					<span class="item-price">￥ 39.9</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/i1/820705828/TB2FWFvkCFmpuFjSZFrXXayOXXa_!!820705828.png_400x400q60.jpg" alt="">
+					<p>Midea/美的 M3-L233B家用微波炉光波炉 正品智能平板 烤箱一体</p>
+					<span class="item-price">￥ 488.0</span>
+				</a>
+				<a href="#" class="wonderful-item">
+					<img src="https://img.alicdn.com/bao/uploaded/bao/upload/TB1Q_77RXXXXXaZapXXwu0bFXXX.png_400x400q60.jpg" alt="">
+					<p>新品Danielwellington女生手表 dw手表女 潮流简约学生手表</p>
+					<span class="item-price">￥ 1290.0</span>
+				</a>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="#" class="tmall-ensure flex-auto-wrap">
+				<img src="images/ensure优.png" alt="">
+				<img src="images/ensure七.png" alt="">
+				<img src="images/ensure特.png" alt="">
+				<img src="images/ensure帮.png" alt="">
+			</a>
+			<div class="tmall-desc flex-auto-wrap">
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">免费注册</a></dd>
+					<dd><a href="#">开通支付宝</a></dd>
+					<dd><a href="#">支付宝充值</a></dd>
+				</dl>
+				<dl>
+					<dt>天猫保障</dt>
+					<dd><a href="#">发票保障</a></dd>
+					<dd><a href="#">售后规则</a></dd>
+					<dd><a href="#">缺货付赔</a></dd>
+				</dl>
+				<dl>
+					<dt>支付方式</dt>
+					<dd><a href="#">快捷支付</a></dd>
+					<dd><a href="#">信用卡</a></dd>
+					<dd><a href="#">余额宝</a></dd>
+					<dd><a href="#">蚂蚁花贝</a></dd>
+					<dd><a href="#">货到付款</a></dd>
+				</dl>
+				<dl>
+					<dt>商家服务</dt>
+					<dd><a href="#">商家入驻</a></dd>
+					<dd><a href="#">商家中心</a></dd>
+					<dd><a href="#">天猫智库</a></dd>
+					<dd><a href="#">天猫规则</a></dd>
+					<dd><a href="#">物流服务</a></dd>
+					<dd><a href="#">喵言喵语</a></dd>
+					<dd><a href="#">运营服务</a></dd>
+				</dl>
+				<dl>
+					<dt>手机天猫</dt>
+					<dd><a href="#"><img src="https://img.alicdn.com/tps/i1/TB14VZKHXXXXXcAXXXX64VRZFXX-105-105.png" alt=""></a></dd>
+				</dl>
+			</div>
+			<div class="tmall-copyright">
+				<img src="images/tmallCopyright.png" alt="">
+			</div>
+		</div>
+	</div>
+<script src="js/index.js"></script>
+</body>
+</html>
